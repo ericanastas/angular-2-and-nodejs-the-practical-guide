@@ -45,7 +45,16 @@
             <p>{{ newPost }}</p>
     - Two Way Data Binding
         - Need to first add `@angular/forms` module from core
-        - 
+- Angular Material
+    - Prebuilt components for angular built on Google's material design
+    - Not just styling like bootrap, actual angular components
+    - Install through npm: `npm install --save @angular/material`
+    - Install through ng: `ng add @angular/material`
+        - This adds it to the package.json but also integrates it into the module
+            - Adds style reference to `angular.json`
+            - Adds reference to `app.module.ts`
+            - Adds google font refereces to `index.html`
+  
     
 
 
