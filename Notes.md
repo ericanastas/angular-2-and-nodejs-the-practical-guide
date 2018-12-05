@@ -23,4 +23,10 @@
     - The `@Component` takes parmeters that identify the selector, template
     - Convention to alway start selectors with `app-`
   - Components can not be accessed by adding the select (e.g `<app-my-compnent>`) with out first registering the component in a model
-  -
+- Event binding
+  - Events on DOM elemetns in the template are bound to methods in the component class
+  - For example: `<button (click)="onAddPost()">Save Post</button>`
+- DataBinding
+  - Template is bound to properties of component class
+  - `<p>{{newPost}}</p>`
+  - `export class PostCreateComponent { newPost = ''; }`

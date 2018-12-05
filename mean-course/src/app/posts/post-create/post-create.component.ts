@@ -6,7 +6,9 @@ import { allResolved } from 'q';
   templateUrl: './post-create.component.html'
 })
 export class PostCreateComponent {
+  newPost = '';
+
   onAddPost() {
-    alert('Post Added!');
+    this.newPost = 'Hello this is a new post content!';
   }
 }
