@@ -37,12 +37,15 @@
   - `<textarea rows="6" [value]="newPost"></textarea>`
     - Binding the value of the text area to the `newPost` property of the component
 - Getting User Input
-    - Elements in the template can be marked with hash tags, which can be used in other template code to reference the element
-    - The following passes  the entire text area object to onAddPost
-        <textarea rows="6" [value]="newPost" #postInput></textarea><hr />
-        <button (click)="onAddPost(postInput)">Save Post</button>
-        <p>{{ newPost }}</p>
-    -
+    - Hash References
+        - Elements in the template can be marked with hash tags, which can be used in other template code to reference the element
+        - The following passes  the entire text area object to onAddPost
+            <textarea rows="6" [value]="newPost" #postInput></textarea><hr />
+            <button (click)="onAddPost(postInput)">Save Post</button>
+            <p>{{ newPost }}</p>
+    - Two Way Data Binding
+        - Need to first add `@angular/forms` module from core
+        - 
     
 
 

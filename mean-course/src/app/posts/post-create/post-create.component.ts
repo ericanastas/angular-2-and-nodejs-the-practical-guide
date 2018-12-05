@@ -8,8 +8,10 @@ import { allResolved } from 'q';
 export class PostCreateComponent {
   newPost = '';
 
-  onAddPost(postInput: HTMLTextAreaElement) {
-    console.dir(postInput);
-    this.newPost = postInput.value;
+  enteredValue = '';
+
+  onAddPost() {
+
+    this.newPost = this.enteredValue;
   }
 }
