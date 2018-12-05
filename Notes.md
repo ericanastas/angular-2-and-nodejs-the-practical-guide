@@ -27,6 +27,12 @@
   - Events on DOM elemetns in the template are bound to methods in the component class
   - For example: `<button (click)="onAddPost()">Save Post</button>`
 - DataBinding
-  - Template is bound to properties of component class
+  - Template is bound to properties of component class using string interpolation
   - `<p>{{newPost}}</p>`
   - `export class PostCreateComponent { newPost = ''; }`
+- Binding to Element properties
+  - Bind to properties of a DOM element by wrapping property names in square brackets
+  - `<textarea rows="6" [value]="'Static Text'"></textarea>`
+    - Binding the value to a hard coded string
+  - `<textarea rows="6" [value]="newPost"></textarea>`
+    - Binding the value of the text area to the `newPost` property of the component
