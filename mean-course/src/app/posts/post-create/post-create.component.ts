@@ -8,7 +8,8 @@ import { allResolved } from 'q';
 export class PostCreateComponent {
   newPost = '';
 
-  onAddPost() {
-    this.newPost = 'Hello this is a new post content!';
+  onAddPost(postInput: HTMLTextAreaElement) {
+    console.dir(postInput);
+    this.newPost = postInput.value;
   }
 }
