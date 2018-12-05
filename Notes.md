@@ -1,0 +1,26 @@
+# Angular 2 and NodeJS The Practical Guide
+
+- Setup Project
+  - Install Angular CLI: `npm install -g @angular/cli`
+  - Create angular app: `ng new mean-course`
+- VSCode Extensions
+  - Angular Essentials
+  - Material Icon Themes (not require by nice to have)
+- Angular Folder Structure
+  - How an Angular application starts
+    - main.ts
+      - First thing that runs, this is just a default of angular
+- Angular Components
+  - Angular apps are built on components
+  - Components can be reused
+  - You compose and entire with componnents
+- Creating a New component
+  - Add sub folder to `app` folder
+  - Create typesript file and template html file
+  - naming convention end files with ".componenet.ts" (e.g: `my-component.component.ts`)
+  - TS file should contain a TS class for the comonent
+  - This is decorated with the `@Component` decorator from `@angular/core`
+    - The `@Component` takes parmeters that identify the selector, template
+    - Convention to alway start selectors with `app-`
+  - Components can not be accessed by adding the select (e.g `<app-my-compnent>`) with out first registering the component in a model
+  -
