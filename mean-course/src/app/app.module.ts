@@ -7,16 +7,19 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { MatInputModule } from '@angular/material';
 import { MatCardModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material';
+import { HeaderComponent } from './header/head.component';
 
 @NgModule({
-  declarations: [AppComponent, PostCreateComponent],
+  declarations: [AppComponent, PostCreateComponent, HeaderComponent],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
